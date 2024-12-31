@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 type SectionProps = {
     name: string,
-    component: ReactNode
     path: string
 }
 interface BodyProps {

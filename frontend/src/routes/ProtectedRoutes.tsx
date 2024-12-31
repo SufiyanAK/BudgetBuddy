@@ -2,27 +2,23 @@ import { FC } from "react";
 import { Link, Navigate, Outlet } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import Body from "../components/Body/Body";
-import Dashboard from "../pages/Dashboard";
-import Profile from "../pages/Profile";
-import Expenses from "../pages/Expenses";
-
 const ProtectedRoutes: FC = () => {
 
     const sections = [
         {
             name: 'Dashboard',
             path: '/dashboard',
-            component: <Dashboard />
+            // component: <Dashboard />
         },
         {
             name: 'Expenses',
             path: '/expenses',
-            component: <Expenses />
+            // component: <Expenses />
         },
         {
             name: 'Profile',
             path: '/profile',
-            component: <Profile />
+            // component: <Profile />
         }
     ]
 
